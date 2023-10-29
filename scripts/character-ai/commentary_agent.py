@@ -1,6 +1,8 @@
 from characterai import PyCAI
 
-AUTH_TOKEN = ...
+auth_token_file = open('auth_token.txt')
+AUTH_TOKEN = auth_token_file.readline()
+auth_token_file.close()
 # sm64 mario, will change later
 CHARACTER = 'OYYf4iM6fjt9eZ72oXRsY3UGPeXd9Y-uJwfAjF5JAwk'
 
@@ -20,3 +22,4 @@ class CommentaryAgent:
 
     def fetch_commentary(self, reasoning: str, task: str):
         pass
+    
