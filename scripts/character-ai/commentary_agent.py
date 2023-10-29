@@ -22,4 +22,3 @@ class CommentaryAgent:
 
     def fetch_commentary(self, reasoning: str, task: str):
         pass
-    
